@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration SYSTEM
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	
+	<session-factory>
+	
+				<property name = "connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name = "connection.url">jdbc:mysql://localhost:3306/myhiber</property>
+		<property name = "connection.username">root</property>
+		<property name = "connection.password">root</property>
+		<property name = "dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name = "hbm2ddl.auto">update</property>
+		<property name = "show_sql">true</property>
+		<property name = "cache.use_second_Level_cache">true</property>
+		<property name = "cache.region.factory_class">org.hibernate.cache.ehcache.internal.EhcacheRegionFactory</property>
+	 	<mapping class = "com.A7_Second_Level_Cache.Stud" /> 
+	 	<mapping class = "com.A7_Second_Level_Cache.Certificate" /> 
+	 	
+		
+	
+	
+	
+	
+	</session-factory>
+	
+
+</hibernate-configuration>	
